@@ -24,60 +24,103 @@
 
 <body>
 
-    <!-- <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;"> -->
-
-    <form class="p-4">
-        <h5 class="card-title">Your current location is:</h5>
+    <form class="p-4" id="myForm">
+        <b class="card-title">Your current location is:</b>
         <p class="location">Loding...</p>
         <div class="row">
             <div class="col">
-                <label for="exampleFormControlSelect1">Name</label>
-                <input type="text" class="form-control" placeholder="First name">
+                <label for="exampleFormControlSelect1">Name<samp style="color: #c64848;">*</samp></label>
+                <input type="text" class="form-control" placeholder="First name" id="name" required>
             </div>
             <div class="col">
-                <label for="exampleFormControlSelect1">Phone Number</label>
-                <input type="text" class="form-control" placeholder="Last name">
+                <label for="exampleFormControlSelect1">Phone Number<samp style="color: #c64848;">*</samp></label>
+                <input type="text" class="form-control" placeholder="Last name" id="phone_number" required>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <label for="exampleFormControlSelect1">Email</label>
-                <input type="email" class="form-control" placeholder="First name">
+                <label for="exampleFormControlSelect1">Email<samp style="color: #c64848;">*</samp></label>
+                <input type="email" class="form-control" placeholder="Email" id="email" required>
             </div>
             <div class="col">
-                <label for="exampleFormControlSelect1">Location</label>
-                <input type="text" class="form-control" placeholder="Last name">
+                <label for="exampleFormControlSelect1">Company Name<samp style="color: #c64848;">*</samp></label>
+                <input type="email" class="form-control" placeholder="Company Name" id="company_name" required>
             </div>
         </div>
         <div class="form-group">
-            <label for="exampleFormControlInput1">Company Name</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=".Pvt">
+            <label for="exampleFormControlInput1">Company Web site</label>
+            <input type="text" class="form-control" id="company_url" placeholder="www.xyz.co.in" required>
         </div>
         <div class="form-group">
-            <label for="exampleFormControlInput1">Subject</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject:">
+            <label for="exampleFormControlInput1">Product of interest<samp style="color: #c64848;">*</samp></label>
+            <input type="text" class="form-control" id="product_interested" placeholder="Product:" required>
         </div>
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">Comments *</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="exampleFormControlTextarea1">Comments <samp style="color: #c64848;">*</samp></label>
+            <textarea class="form-control" id="comments" rows="3"></textarea>
         </div>
-
-
-
-        <span class="msg-error error"></span>
         <div id="recaptcha" class="g-recaptcha" data-sitekey="6Ld0lZEUAAAAAJAK1wPWcVxwOlc1qgFcSIcU1das"
             data-callback="aaa">
         </div>
-        <!-- Add a button with the id 'btn-validate' -->
-        <!-- <button id="btn-validate">Validate reCAPTCHA</button> -->
-        <button type="button" class="btn btn-primary btn-lg btn-block">Subbmit</button>
+        <span class="msg-error error"></span>
+        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="submitForm()">Submit</button>
     </form>
 
-    <!-- </div> -->
-
+    <!-- Add a popup div for the "thank you" message -->
+    <div id="thankYouPopup"
+        style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 20px; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+        <div class="mb-4 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-success" width="75" height="75" fill="currentColor"
+                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+            </svg>
+        </div>
+        <div class="text-center">
+            <h1>Thank You !</h1>
+            <p>We've send the link to your inbox. Lorem ipsum dolor sit, </p>
+            <!--<button class="btn btn-primary">Back Home</button>-->
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
+        function submitForm() {
+            var formData = {
+                name: $('#name').val(),
+                phone_number: $('#phone_number').val(),
+                email: $('#email').val(),
+                company_name: $('#company_name').val(),
+                product_interested: $('#product_interested').val(),
+                comments: $('#comments').val(),
+                company_url: $('#company_url').val()
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "//cbsiot.live/internal.php",
+                data: JSON.stringify(formData),
+                contentType: "application/json",
+                success: function (data) {
+                    console.log('Data sent successfully:', data);
+
+                    // Display "thank you" message in a popup div
+                    $('#thankYouPopup').show();
+
+                    // Close the popup after a delay (e.g., 3 seconds)
+                    setTimeout(function () {
+                        $('#thankYouPopup').hide();
+                    }, 3000); // 3000 milliseconds = 3 seconds
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error sending data:', error);
+                    console.log('Response:', xhr.responseText);
+                    // Handle the error if needed
+                }
+            });
+
+        }
+
         //I am not a robot
         function aaa() {
             console.log('cccc')

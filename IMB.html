@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CBSIoT-The Future Of Conectivity">
+
+    <!-- ========== Page Title ========== -->
+    <title>CBSIoT-The Future Of Conectivity</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon1.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+    <style>
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .home {
+            height: 70vh;
+            position: relative;
+        }
+
+        video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .home-content {
+            position: relative;
+            padding-top: 150px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .home {
+            font-size: clamp(25px, 4vw, 40px);
+            margin-top: 10px;
+        }
+
+        .home-content button {
+            display: block;
+            font-size: clamp(14px, 1.5vw, 18px);
+            border: 1px solid #f1f1f1;
+            border-radius: 5px;
+            background: transparent;
+            color: #fff;
+            margin: 50px auto 0;
+            padding: 12px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Header 
+    ============================================= -->
+    <header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default navbar-fixed dark  bootsnav">
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav button theme border">
+                    <ul>
+                        <li>
+                            <a style="background-color: #000080; border-radius: 5px; color: white;" onclick="openModal()">Request Demo</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index-10.html">
+                        <img src="assets/img/logo5.svg" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+                        <li>
+                            <a class="smooth-menu" href="https://cbsiot.live/">Home</a>
+                        </li>
+                        <li class="dropdown dropdown-right">
+                            <a href="#" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Product</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="IMB.html">IMB 4.0</a></li>
+                                <!-- <li><a href="#">AMS</a></li>
+                                <li><a href="#">MMS</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-right">
+                            <a href="#" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Solutions</a>
+                            <ul class="dropdown-menu">
+                                <!-- <li><a href="solutions.html">Maintenance Management System</a></li>
+                                <li><a href="#">Visitor Management System</a></li>
+                                <li><a href="#">Office Management System</a></li>
+                                <li><a href="#">Tea Blend Management System</a></li>
+                                <li><a href="#">Predictive Maintenance</a></li> -->
+                                <li><a href="EnergyManagementSystem.html">Energy Management System</a></li>
+                                <!-- <li><a href="#">Multi Tank Monitoring System</a></li>
+                                <li><a href="#">Smart Pole Management System<span class="badge">New</span></a></li>
+                                <li><a href="#">Smart Helmet <span class="badge">New</span></a></li> -->
+                            </ul>
+                        </li>
+                        <!-- <li class="dropdown dropdown-right">
+                            <a href="#" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Resources</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Blogs.html">Blogs</a></li>
+                                <li><a href="CaseStudies.html">Case Studies</a></li>
+                                <li><a href="Videos.html">Videos</a></li>
+                            </ul>
+                        </li> -->
+                        <li>
+                            <a class="smooth-menu" href="#">Company</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()" style="font-size: 40px;">&times;</span>
+            <!-- Iframe to load the external page -->
+            <iframe src="form.html"
+                style="width: 500px; height: 600px; border: 0;"></iframe>
+        </div>
+    </div>
+
+    <!-- Start Banner 
+    ============================================= -->
+    <div class="banner-area content-double text-normal fixed-navbar text-light bg-theme2">
+        <div class="box-table">
+            <div class="box-cell">
+                <div class="container">
+                    <div class="row">
+                        <div class="double-items with-thumb">
+                            <div class="col-md-6 info">
+                                <div class="content">
+                                    <h1 style="color: black;">Saving Energy Using IMB 4.0</h1>
+                                    <p style="color: black;">
+                                        Investigate IoT gateway devices that facilitate data connectivity and
+                                        integration with various sensors like energy meters, PLCs, DCS, OPC, flow
+                                        meters, vibration sensors, etc. Additionally, explore hardware solutions that
+                                        come equipped with integrated sensors tailored to your specific use cases. Delve
+                                        into APIs for establishing seamless connections between your gateways and
+                                        systems with IMB 4.0.
+                                    </p>
+                                    <!-- <a class="btn circle btn-light theme btn-md" href="#">Get Started</a> -->
+                                    <a class="btn btn-theme effect btn-sm2" href="#" onclick="openModal()">Request
+                                        Demo</a>
+                                    <!-- <a class="btn circle btn-light border btn-md popup-youtube" href="https://www.youtube.com/watch?v=owhuBrGIOsE"><i class="fas fa-play"></i> Promo</a> -->
+                                </div>
+                            </div>
+                            <div class="col-md-6 thumb">
+                                <img src="assets/img/pb1.svg" alt="Thumb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="wavesshape shape">
+                    <img src="assets/img/waves-shape-2.svg" alt="Shape">
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start Core Features
+    ============================================= -->
+    <div id="features" class="core-features-area default-padding-top bottom-less">
+        <!-- Left Shape -->
+        <!-- <div class="left-shape">
+            <img src="assets/img/shape/5.png" alt="Shape">
+        </div> -->
+        <!-- End Left Shape -->
+        <div class="container">
+            <div class="core-features-items">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="single-item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="item">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Versatility</h4>
+                            <p>
+                                A range of products providing options to select the most suitable architecture.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="item">
+                            <i class="fas fa-headset"></i>
+                            <h4>Optimal Features</h4>
+                            <p>
+                                Devices equipped with the necessary features to address specific use cases effectively.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="item">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Dependability</h4>
+                            <p>
+                                Every hardware component from Faclon is a trusted choice within the industry.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="item">
+                            <i class="fas fa-flask"></i>
+                            <h4>Effortless Setup</h4>
+                            <p>
+                                Effortless plug-and-play ensures instant and seamless data reception.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End COre Features -->
+
+    <!-- Start About 
+    ============================================= -->
+    <div id="about" class="about-area bg-gray default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 thumb">
+                    <img src="assets/img/pb.svg" alt="Thumb">
+                </div>
+                <div class="col-md-7 default info">
+                    <!-- <h4>Why Chose Us</h4> -->
+                    <h2>Smooth Integration with IMB 4.0</h2>
+                    <p>
+                        IMB 4.0 offers a suite of industrial protocol connectors, IoT gateways, and APIs designed
+                        for seamless data acquisition from diverse sources. IMB 4.0 provides customers with the
+                        flexibility to implement various architectures for efficient data collection.
+                    </p>
+                    <ul>
+                        <li>
+                            <h5>Compatibility with major industrial protocols:
+                                Profinet
+                                Modbus TCP/RS 485
+                                Bacnet
+                                IEC 61850
+                                HART
+                                OPC UA/DA
+                                Ethernet IP
+                                MQTT, etc.</h5>
+                        </li>
+                        <li>
+                            <h5>Varied IoT gateway hardware options:
+                                4G
+                                GPRS
+                                WiFi
+                                LoRaWAN
+                                Ethernet, etc.</h5>
+                        </li>
+                        <li>
+                            <h5>Diverse connectivity options within the hardware portfolio.</h5>
+                        </li>
+                        <li>
+                            <h5>Seamless integration with third-party systems through APIs.</h5>
+                        </li>
+                        <li>
+                            <h5>Comprehensive capability to adapt to various industrial communication standards and
+                                connectivity needs.</h5>
+                        </li>
+
+                    </ul>
+                    <a class="btn btn-theme effect btn-sm" href="/EnergyManagementSystem.html">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Start Signup 
+    ============================================= -->
+    <div class="signup-area bg-fixed shadow dark text-light default-padding text-center"
+        style="background-image: url(assets/img/b-4.svg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3 style="color: white;">Saving Energy Using IMB 4.0!</h3>
+                    <p style="color: white;">
+                        <!-- Step into the realm of IMB 4.0, where energy and electrical data converge to offer enterprises a
+                        holistic solution for overseeing energy consumption, distribution, power quality, faults,
+                        utilization, efficiency programs, maintenance schedules, and periodic diagnostics. -->
+                    </p>
+                    <a class="btn circle btn-light effect btn-md" href="#" onclick="openModal()">Request Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Signup -->
+
+    <!-- Start Footer 
+    ============================================= -->
+   <footer class="default-padding-top bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="f-items">
+                    <div class="col-md-4 col-sm-6 equal-height item">
+                        <div class="f-item about">
+                            <img src="assets/img/logo5.svg" alt="Logo">
+                            <p>
+                                Empowering Businesses, Enhancing Lives. Explore our innovative suite of solutions
+                                designed to streamline operations, boost efficiency, and elevate safety. Join us on the
+                                journey towards a smarter, more connected future.
+                            </p>
+                            <h5>Follow Us</h5>
+                            <ul class="social">
+                                <li class="facebook">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                </li>
+                                <li class="instagram">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 equal-height item">
+                        <div class="f-item link">
+                            <h4>Company</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Compnay History</a>
+                                </li>
+                                <li>
+                                    <a href="#">Features</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 equal-height item">
+                        <div class="f-item link">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Career</a>
+                                </li>
+                                <li>
+                                    <a href="#">Leadership</a>
+                                </li>
+                                <li>
+                                    <a href="#">Strategy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">History</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 equal-height item">
+                        <div class="f-item twitter-widget">
+                            <h4>Contact Info</h4>
+                            <!-- <p>
+                                Connect with us for tailored solutions and dedicated support. Elevate your business with
+                                innovation. Your success is our priority.
+                            </p> -->
+                            <div class="address">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Location</h5>
+                                            <b>Kolkata</b>
+                                            <span>87/3A, Raja Sc Mullick Road,
+                                                Kolkata, West Bengal, 700047</span>
+                                                <br>
+                                                <b>Bangalore</b>
+                                                <span>#43,5th A cross ITI layout jp nagar, 
+                                                phase-1,PIN-560078 </span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Email:</h5>
+                                            <span>consultant@cbsiot.live</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Phone:</h5>
+                                            <span>+91-033-3594-8167</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Website:</h5>
+                                            <span>www.cbsiot.live</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <p>&copy; Copyright 2023. All Rights Reserved by <a
+                                    href="www.conglomerateweb.in">Conglomerate Business Solutions Pvt Ltd</a></p>
+                        </div>
+                        <div class="col-md-6 text-right link">
+                            <ul>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/equal-height.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/click.js"></script>
+</body>
+
+</html>

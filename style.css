@@ -296,6 +296,10 @@ input {
   background-color: #000080;
 }
 
+.bg-theme2 {
+  background-color: #ffffff;
+}
+
 .text-light h1, 
  .text-light h2, 
  .text-light h3, 
@@ -304,7 +308,7 @@ input {
  .text-light h6, 
  .text-light p, 
  .text-light a {
-  color: #ffffff;
+  color: #000000;
 }
 
 .shadow {
@@ -376,7 +380,10 @@ input {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
+.default-padding2 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .default-padding-top {
   padding-top: 120px;
 }
@@ -440,6 +447,11 @@ input {
 .btn-sm {
   padding: 8px 35px;
   font-size: 12px;
+}
+.btn-sm2 {
+  padding: 8px 35px;
+  font-size: 12px;
+  margin-top: 60px;
 }
 
 .btn.btn-sm-pro {
@@ -1263,7 +1275,9 @@ body,
 .banner-area .thumb.width-150 img {
   max-width: 150%;
 }
-
+.banner-area .thumb.width-200 img {
+  max-width: 200%;
+}
 .banner-area.text-xl .double-items h1 {
     font-weight: 500;
     margin-bottom: 30px;

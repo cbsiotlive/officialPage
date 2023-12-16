@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CBSIoT-The Future Of Conectivity">
+
+    <!-- ========== Page Title ========== -->
+    <title>CBSIoT-The Future Of Conectivity</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon1.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+    <style>
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .home {
+            height: 70vh;
+            position: relative;
+        }
+
+        video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .home-content {
+            position: relative;
+            padding-top: 150px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .home {
+            font-size: clamp(25px, 4vw, 40px);
+            margin-top: 10px;
+        }
+
+        .home-content button {
+            display: block;
+            font-size: clamp(14px, 1.5vw, 18px);
+            border: 1px solid #f1f1f1;
+            border-radius: 5px;
+            background: transparent;
+            color: #fff;
+            margin: 50px auto 0;
+            padding: 12px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Header 
+    ============================================= -->
+    <header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default navbar-fixed dark  bootsnav">
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav button theme border">
+                    <ul>
+                        <li>
+                            <a style="background-color: #000080; border-radius: 5px; color: white;" onclick="openModal()">Request Demo</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index-10.html">
+                        <img src="assets/img/logo5.svg" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+                        <li>
+                            <a class="smooth-menu" href="https://cbsiot.live/">Home</a>
+                        </li>
+                        <li class="dropdown dropdown-right">
+                            <a href="#" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Product</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="IMB.html">IMB 4.0</a></li>
+                                <!-- <li><a href="#">AMS</a></li>
+                                <li><a href="#">MMS</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-right">
+                            <a href="#" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Solutions</a>
+                            <ul class="dropdown-menu">
+                                <!-- <li><a href="solutions.html">Maintenance Management System</a></li>
+                                <li><a href="#">Visitor Management System</a></li>
+                                <li><a href="#">Office Management System</a></li>
+                                <li><a href="#">Tea Blend Management System</a></li>
+                                <li><a href="#">Predictive Maintenance</a></li> -->
+                                <li><a href="EnergyManagementSystem.html">Energy Management System</a></li>
+                                <!-- <li><a href="#">Multi Tank Monitoring System</a></li>
+                                <li><a href="#">Smart Pole Management System<span class="badge">New</span></a></li>
+                                <li><a href="#">Smart Helmet <span class="badge">New</span></a></li> -->
+                            </ul>
+                        </li>
+                        <!-- <li class="dropdown dropdown-right">
+                            <a href="#" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Resources</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Blogs.html">Blogs</a></li>
+                                <li><a href="CaseStudies.html">Case Studies</a></li>
+                                <li><a href="Videos.html">Videos</a></li>
+                            </ul>
+                        </li> -->
+                        <li>
+                            <a class="smooth-menu" href="#">Company</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()" style="font-size: 40px;">&times;</span>
+            <!-- Iframe to load the external page -->
+            <iframe src="form.html"
+                style="width: 500px; height: 600px; border: 0;"></iframe>
+        </div>
+    </div>
+    <!-- Start Banner 
+    ============================================= -->
+    <!-- <div class="banner-area top-shape transparent-nav text-xl content-double">
+        <div class="box-table">
+            <div class="box-cell">
+                <div class="container">
+                    <div class="row">
+                        <div class="double-items with-thumb"> -->
+                            <!-- Banner Left Content -->
+                            <!-- <div class="info col-md-6">
+                                <div class="content inc-video">
+                                    <h1>Energy Management System</h1>
+                                    <p>
+                                        Enhance energy efficiency, cut costs, and minimize carbon footprints by
+                                        leveraging enhanced data visibility, actionable insights, automation,
+                                        data-driven maintenance, and intelligent problem isolation. The IMB 4.0 Smart
+                                        Energy Management System (EMS) empowers enterprises to attain ISO 50001
+                                        compliance.
+                                    </p>
+                                    <a class="btn btn-theme effect btn-sm" href="#" onclick="openModal()" >Request Demo</a>
+                                </div>
+                            </div> -->
+                            <!-- End Banner Left Content -->
+
+                            <!-- Start Banner Form -->
+                            <!-- <div class="thumb col-md-5 width-200 col-md-offset-1">
+                                <img src="assets/img/illustration/1.svg" alt="Thumb">
+                            </div> -->
+                            <!-- End Banner Form -->
+
+                        <!-- </div>
+                    </div>
+                </div>
+                <div class="bottom-bg">
+                    <img src="assets/img/shape/1.png" alt="Shape">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- End Banner -->
+
+    <!-- Start Banner 
+    ============================================= -->
+    <div class="banner-area content-double text-normal fixed-navbar text-light bg-theme2">
+        <div class="box-table">
+            <div class="box-cell">
+                <div class="container">
+                    <div class="row">
+                        <div class="double-items with-thumb">
+                            <div class="col-md-6 info">
+                                <div class="content">
+                                    <h1 style="color: black;">Energy Management System</h1>
+                                    <p style="color: black;">
+                                        Enhance energy efficiency, cut costs, and minimize carbon footprints by
+                                        leveraging enhanced data visibility, actionable insights, automation,
+                                        data-driven maintenance, and intelligent problem isolation. The IMB 4.0 Smart
+                                        Energy Management System (EMS) empowers enterprises to attain ISO 50001
+                                        compliance.
+                                    </p>
+                                    <!-- <a class="btn circle btn-light theme btn-md" href="#">Get Started</a> -->
+                                    <a class="btn btn-theme effect btn-sm2" href="#" onclick="openModal()" >Request Demo</a>
+                                    <!-- <a class="btn circle btn-light border btn-md popup-youtube" href="https://www.youtube.com/watch?v=owhuBrGIOsE"><i class="fas fa-play"></i> Promo</a> -->
+                                </div>
+                            </div>
+                            <div class="col-md-6 thumb">
+                                <img src="assets/img/pb3.svg" alt="Thumb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="wavesshape shape">
+                    <img src="assets/img/waves-shape-2.svg" alt="Shape">
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start Features
+    ============================================= -->
+    <h1 class="features-area bg-gray default-padding-top bottom-less" style="text-align: center;">Harness compelling
+        insights for energy conservation through IMB 4.0</h1>
+    <div id="features" class="features-area bg-gray default-padding-top bottom-less">
+
+        <div class="container">
+            <div class="features-box text-center">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="single-item col-md-4 col-sm-6">
+                        <div class="item">
+                            <!-- <i class="fas fa-chart-line"></i> -->
+                            <img src="assets/img/f1.svg" alt="" width="70">
+                            <h4>Efficient Management</h4>
+                            <p>
+                                Track the current, power, runtime, and energy consumption of your equipment
+                                intelligently to uncover potential savings.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-md-4 col-sm-6">
+                        <div class="item">
+                            <!-- <i class="fas fa-headset"></i> -->
+                            <img src="assets/img/f2.svg" alt="" width="70">
+                            <h4>Loss Detection</h4>
+                            <p>
+                                Identify areas of energy loss within your electrical distribution network for more
+                                effective energy management.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-md-4 col-sm-6">
+                        <div class="item">
+                            <!-- <i class="fas fa-rocket"></i> -->
+                            <img src="assets/img/f3.svg" alt="" width="70">
+                            <h4>Power Evaluation</h4>
+                            <p>
+                                Keep a close eye on your equipment's harmonics, voltage fluctuations, and waveform data
+                                to not only maintain but also enhance asset longevity.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="features" class="features-area bg-gray">
+        <div class="container">
+            <div class="features-box text-center">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="single-item col-md-4 col-sm-6">
+                        <div class="item">
+                            <!-- <i class="fas fa-headset"></i> -->
+                            <img src="assets/img/f4.svg" alt="" width="70">
+                            <h4>Cost Optimization</h4>
+                            <p>
+                                Stay ahead of penalties by receiving timely alerts for power factor failures, load
+                                shedding, and increased equipment consumption, leading to optimized energy costs.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-md-4 col-sm-6">
+                        <div class="item">
+                            <!-- <i class="fas fa-rocket"></i> -->
+                            <img src="assets/img/f5.svg" alt="" width="70">
+                            <h4>Task Automation</h4>
+                            <p>
+                                Achieve operational efficiency through the smart automation of manual tasks such as
+                                meter data collection, data analysis, and reporting.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-md-4 col-sm-6">
+                        <div class="item">
+                            <!-- <i class="fas fa-headset"></i> -->
+                            <img src="assets/img/f6.svg" alt="" width="70">
+                            <h4>Consumption Benchmark</h4>
+                            <p>
+                                Compare energy usage against production levels using advanced formulas and detailed
+                                analyses across all operational tiers.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Features -->
+
+    <!-- Start About 
+    ============================================= -->
+    <div id="about" class="about-area bg-gray default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 thumb">
+                    <img src="/assets/img/pb.svg" alt="Thumb">
+                </div>
+                <div class="col-md-7 default info">
+                    <!-- <h4>Why Chose Us</h4> -->
+                    <h2>IMB Edge 4G Gateway</h2>
+                    <p>
+                        A system designed to track and analyze energy consumption patterns in real-time, enabling users
+                        to make informed decisions for optimizing energy usage, reducing costs, and promoting
+                        sustainability.
+                    </p>
+                    <ul>
+                        <li>
+                            <h5>Model - IMB 4.0 V2</h5>
+                        </li>
+                        <li>
+                            <h5>Digital Input - Modbus RS 485</h5>
+                        </li>
+
+                        <li>
+                            <h5>Communication - 4G LTE / WiFi / Ethernet / 2G</h5>
+                        </li>
+                        <li>
+                            <h5>Power Supply - 12V - 24V DC</h5>
+                        </li>
+                        <li>
+                            <h5>Connects Multiple Slaves</h5>
+                        </li>
+                        <li>
+                            <h5>FOTA</h5>
+                        </li>
+                    </ul>
+                        <a class="btn btn-theme effect btn-sm" href="Product.html">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Start Faq  
+    ============================================= -->
+    <div class="faq-area default-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Star Video Faq -->
+                <div class="col-md-6 ">
+                    <img src="assets/img/sb.svg">
+                </div>
+                <!-- End Video Faq -->
+
+                <!-- Star Accordion Items -->
+                <div class="col-md-6 faq-items">
+                    <div class="acd-items acd-arrow">
+                        <div class="panel-group symb" id="accordion">
+
+                            <!-- Single Item -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac1">
+                                            <span>1</span> Manufacturing Facility Efficiency Enhancement
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <strong>How did the implementation of an Energy Management System (EMS) improve
+                                            the efficiency of a manufacturing facility?</strong>
+                                        <p>
+                                            The EMS implementation in the manufacturing facility led to a significant
+                                            reduction in energy consumption by optimizing the operation schedules of
+                                            heavy machinery during non-peak hours. Real-time monitoring of power quality
+                                            also helped identify and rectify inefficiencies, resulting in a 20% decrease
+                                            in overall energy costs.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac2">
+                                            <span>2</span> Commercial Building Energy Conservation
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <strong>Can you provide an example of how an EMS contributed to energy
+                                            conservation in a commercial building?</strong>
+                                        <p>
+                                            The installation of an EMS in a commercial building allowed for smart
+                                            control of HVAC systems based on occupancy and external weather conditions.
+                                            By utilizing data-driven insights, the building achieved a 15% reduction in
+                                            energy consumption. Additionally, automated alerts for power anomalies
+                                            facilitated quick response and preventive maintenance, further optimizing
+                                            energy usage.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac4">
+                                            <span>3</span> ISO 50001 Compliance in a Technology Park
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <strong>How did an EMS assist a technology park in achieving ISO 50001
+                                            compliance?</strong>
+                                        <p>
+                                            The implementation of an EMS in the technology park systematically monitored
+                                            and managed energy consumption across various departments. This not only
+                                            facilitated ISO 50001 compliance but also uncovered opportunities for
+                                            further energy savings. By automating manual data collection and analysis,
+                                            the technology park streamlined its energy management processes, ensuring
+                                            sustained compliance and continuous improvement.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+
+                        </div>
+                    </div>
+                    <!-- End Accordion -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Faq  -->
+
+    <!-- Start Signup 
+    ============================================= -->
+    <div class="signup-area bg-fixed shadow dark text-light default-padding text-center"
+        style="background-image: url(assets/img/b-5.svg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3 style="color: white;">Energy Management Software!</h3>
+                    <p style="color: white;">
+                        Step into the realm of Energy Management Software, where energy and electrical data converge to offer enterprises a
+                        holistic solution for overseeing energy consumption, distribution, power quality, faults,
+                        utilization, efficiency programs, maintenance schedules, and periodic diagnostics.
+                    </p>
+                    <a class="btn circle btn-light effect btn-md" href="#" onclick="openModal()">Request Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Signup -->
+
+    <!-- Start Footer 
+    ============================================= -->
+    <footer class="default-padding-top bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="f-items">
+                    <div class="col-md-4 col-sm-6 equal-height item">
+                        <div class="f-item about">
+                            <img src="assets/img/logo5.svg" alt="Logo">
+                            <p>
+                                Empowering Businesses, Enhancing Lives. Explore our innovative suite of solutions
+                                designed to streamline operations, boost efficiency, and elevate safety. Join us on the
+                                journey towards a smarter, more connected future.
+                            </p>
+                            <h5>Follow Us</h5>
+                            <ul class="social">
+                                <li class="facebook">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                </li>
+                                <li class="instagram">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 equal-height item">
+                        <div class="f-item link">
+                            <h4>Company</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Compnay History</a>
+                                </li>
+                                <li>
+                                    <a href="#">Features</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 equal-height item">
+                        <div class="f-item link">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Career</a>
+                                </li>
+                                <li>
+                                    <a href="#">Leadership</a>
+                                </li>
+                                <li>
+                                    <a href="#">Strategy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">History</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 equal-height item">
+                        <div class="f-item twitter-widget">
+                            <h4>Contact Info</h4>
+                            <!-- <p>
+                                Connect with us for tailored solutions and dedicated support. Elevate your business with
+                                innovation. Your success is our priority.
+                            </p> -->
+                            <div class="address">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Location</h5>
+                                            <b>Kolkata</b>
+                                            <span>87/3A, Raja Sc Mullick Road,
+                                                Kolkata, West Bengal, 700047</span>
+                                                <br>
+                                                <b>Bangalore</b>
+                                                <span>#43,5th A cross ITI layout jp nagar, 
+                                                phase-1,PIN-560078 </span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Email:</h5>
+                                            <span>consultant@cbsiot.live</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Phone:</h5>
+                                            <span>+91-033-3594-8167</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Website:</h5>
+                                            <span>www.cbsiot.live</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <p>&copy; Copyright 2023. All Rights Reserved by <a
+                                    href="www.conglomerateweb.in">Conglomerate Business Solutions Pvt Ltd</a></p>
+                        </div>
+                        <div class="col-md-6 text-right link">
+                            <ul>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/equal-height.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/click.js"></script>
+</body>
+
+</html>
