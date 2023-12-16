@@ -26,14 +26,6 @@
     <link href="style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5/html5shiv.min.js"></script>
-      <script src="assets/js/html5/respond.min.js"></script>
-    <![endif]-->
-
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
@@ -81,6 +73,21 @@
             padding: 12px 20px;
             cursor: pointer;
         }
+
+
+        #contentContainer {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+        }
     </style>
 </head>
 
@@ -90,8 +97,8 @@
     <div class="se-pre-con"></div>
     <!-- Preloader Ends -->
 
-    <!-- Header 
-    ============================================= -->
+    <!-- Header
+============================================= -->
     <header id="home">
 
         <!-- Start Navigation -->
@@ -103,7 +110,8 @@
                 <div class="attr-nav button theme border">
                     <ul>
                         <li>
-                            <a style="background-color: #000080; border-radius: 5px; color: white;" onclick="openModal()">Request Demo</a>
+                            <a style="background-color: #000080; border-radius: 5px; color: white;"
+                                onclick="openModal()">Request Demo</a>
                         </li>
                     </ul>
                 </div>
@@ -131,31 +139,31 @@
                             <ul class="dropdown-menu">
                                 <li><a href="IMB.html">IMB 4.0</a></li>
                                 <!-- <li><a href="#">AMS</a></li>
-                                <li><a href="#">MMS</a></li> -->
+                            <li><a href="#">MMS</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown dropdown-right">
                             <a href="#" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Solutions</a>
                             <ul class="dropdown-menu">
                                 <!-- <li><a href="solutions.html">Maintenance Management System</a></li>
-                                <li><a href="#">Visitor Management System</a></li>
-                                <li><a href="#">Office Management System</a></li>
-                                <li><a href="#">Tea Blend Management System</a></li>
-                                <li><a href="#">Predictive Maintenance</a></li> -->
+                            <li><a href="#">Visitor Management System</a></li>
+                            <li><a href="#">Office Management System</a></li>
+                            <li><a href="#">Tea Blend Management System</a></li>
+                            <li><a href="#">Predictive Maintenance</a></li> -->
                                 <li><a href="EnergyManagementSystem.html">Energy Management System</a></li>
                                 <!-- <li><a href="#">Multi Tank Monitoring System</a></li>
-                                <li><a href="#">Smart Pole Management System<span class="badge">New</span></a></li>
-                                <li><a href="#">Smart Helmet <span class="badge">New</span></a></li> -->
+                            <li><a href="#">Smart Pole Management System<span class="badge">New</span></a></li>
+                            <li><a href="#">Smart Helmet <span class="badge">New</span></a></li> -->
                             </ul>
                         </li>
                         <!-- <li class="dropdown dropdown-right">
-                            <a href="#" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Resources</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="Blogs.html">Blogs</a></li>
-                                <li><a href="CaseStudies.html">Case Studies</a></li>
-                                <li><a href="Videos.html">Videos</a></li>
-                            </ul>
-                        </li> -->
+                        <a href="#" class="dropdown-toggle smooth-menu" data-toggle="dropdown">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Blogs.html">Blogs</a></li>
+                            <li><a href="CaseStudies.html">Case Studies</a></li>
+                            <li><a href="Videos.html">Videos</a></li>
+                        </ul>
+                    </li> -->
                         <li>
                             <a class="smooth-menu" href="#">Company</a>
                         </li>
@@ -172,8 +180,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal()" style="font-size: 40px;">&times;</span>
             <!-- Iframe to load the external page -->
-            <iframe src="form.html"
-                style="width: 500px; height: 600px; border: 0;"></iframe>
+            <iframe src="form.html" style="width: 500px; height: 600px; border: 0;"></iframe>
         </div>
     </div>
     <!-- Video -->
@@ -181,18 +188,46 @@
         <video muted loop autoplay>
             <source src="https://cbsiot.live/assets/bnew.mp4" type="video/mp4">
         </video>
-        <div class="home-content">
-            <h1 class="card-title"
-                style="color: white; font-size: 50px;font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                Industry 4.0</h1>
-            <p class="card-text" style="color: white; font-size: 20px;">Enable IoT across your machine fleet to get
-                real-time<br><br>
-                information at your finger tips. Bring transparency in your business operation by</p>
-            <a class="btn btn-theme effect btn-sm2" href="#" onclick="openModal()" >Request Demo</a>
+        <div class="home-content" id="contentContainer">
+            <div class="slider">
+                <div class="slide">
+                    <h1 class="card-title"
+                        style="color: white; font-size: 50px;font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        Industry 4.0</h1>
+                    <p class="card-text" style="color: white; font-size: 20px;">
+                        Enable IoT across your machine fleet to get real-time
+                        <br><br>
+                        information at your finger tips. Bring transparency in your business operation by
+                    </p>
+                    <a class="btn btn-theme effect btn-sm2" href="#" onclick="openModal()">Request Demo</a>
+                </div>
+                <div class="slide">
+                    <h1 class="card-title"
+                        style="color: white; font-size: 50px;font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        Steel Industry</h1>
+                    <p class="card-text" style="color: white; font-size: 20px;">
+                        Industry 4.0 in the steel industry involves smart manufacturing,  
+                        <br><br>
+                        IoT integration, and data analytics for efficient production, enhancing competitiveness and sustainability.
+                    </p>
+                    <a class="btn btn-theme effect btn-sm2" href="#" onclick="openModal()">Request Demo</a>
+                </div>
+                <div class="slide">
+                    <h1 class="card-title"
+                        style="color: white; font-size: 50px;font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        Factory Label</h1>
+                    <p class="card-text" style="color: white; font-size: 20px;">
+                        Industry 4.0 factories integrate smart technologies, AI, and IoT  
+                        <br><br>
+                        to enhance automation, connectivity, and data exchange, revolutionizing manufacturing processes.
+                    </p>
+                    <a class="btn btn-theme effect btn-sm2" href="#" onclick="openModal()">Request Demo</a>
+                </div>
+            </div>
         </div>
     </div>
-    <!--Start Companies Area  
-    ============================================= -->
+    <!--Start Companies Area
+============================================= -->
     <div class="companies-area">
 
         <div class="container">
@@ -251,8 +286,8 @@
     </div>
     <!-- End Companies Area -->
 
-    <!-- Start Overview 
-    ============================================= -->
+    <!-- Start Overview
+============================================= -->
     <div id="overview" class="work-list-area default-padding">
         <div class="container">
             <div class="row">
@@ -399,8 +434,8 @@
     <!-- End Overview -->
 
 
-    <!-- Start Features 
-    ============================================= -->
+    <!-- Start Features
+============================================= -->
     <div id="features" class="features-area item-full text-center cell-items default-padding">
         <div class="container">
             <div class="row">
@@ -535,100 +570,18 @@
     </div>
 
 
-    <!-- Start Contact Area  
-    ============================================= -->
-    <!--<div id="contact" class="contact-us-area default-padding">-->
-    <!--    <div class="container">-->
-    <!--        <div class="row">-->
-    <!--            <div class="col-md-8 col-md-offset-2">-->
-    <!--                <div class="site-heading text-center">-->
-    <!--                    <h2>Contact <span>Us</span></h2>-->
-    <!--                    <h4>Do you Have Any Query?</h4>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--        <div class="row">-->
-    <!--            <div class="col-md-12 contact-form">-->
-    <!--                <h2>Let's lalk about your idea</h2>-->
-    <!--                <form class="contact-form" id="myForm">-->
-                        
-    <!--                    <div class="row">-->
-    <!--                        <div class="col-md-6">-->
-    <!--                            <div class="form-group">-->
-    <!--                                <input class="form-control" id="name" name="name" placeholder="name" type="text">-->
-    <!--                                <span class="alert-error"></span>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <div class="col-md-6">-->
-    <!--                            <div class="form-group">-->
-    <!--                                <input class="form-control" id="phone_number" name="PhoneNumber" placeholder="Phone Number"-->
-    <!--                                    type="text">-->
-    <!--                                <span class="alert-error"></span>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-                        
-    <!--                    <div class="row">-->
-    <!--                        <div class="col-md-6">-->
-    <!--                            <div class="form-group">-->
-    <!--                                <input class="form-control" id="email" name="Email" placeholder="Email*" type="text">-->
-    <!--                                <span class="alert-error"></span>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <div class="col-md-6">-->
-    <!--                            <div class="form-group">-->
-    <!--                                <input class="form-control" id="company_name" name="CompanyName" placeholder="Company Name*"-->
-    <!--                                    type="text">-->
-    <!--                                <span class="alert-error"></span>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-                        
-    <!--                    <div class="col-md-12">-->
-    <!--                        <div class="row">-->
-    <!--                            <div class="form-group">-->
-    <!--                                <input class="form-control" id="company_url" name="name" placeholder="Company Web site" type="text">-->
-    <!--                                <span class="alert-error"></span>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                    <div class="col-md-12">-->
-    <!--                        <div class="row">-->
-    <!--                            <div class="form-group">-->
-    <!--                                <input class="form-control" id="product_interested" name="name" placeholder="Product of interest*" type="text">-->
-    <!--                                <span class="alert-error"></span>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                    <div class="col-md-12">-->
-    <!--                        <div class="row">-->
-    <!--                            <div class="form-group comments">-->
-    <!--                                <textarea class="form-control" id="comments" name="comments"-->
-    <!--                                    placeholder="Tell Us About Project *"></textarea>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                    <div class="col-md-12">-->
-    <!--                        <div class="row">-->
-    <!--                            <button type="submit" name="submit" onclick="submitForm()">-->
-    <!--                                Send Message <i class="fa fa-paper-plane"></i>-->
-    <!--                            </button>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-                        <!-- Alert Message -->
-    <!--                    <div class="col-md-12 alert-notification">-->
-    <!--                        <div id="message" class="alert-msg"></div>-->
-    <!--                    </div>-->
-    <!--                </form>-->
-    <!--            </div>-->
 
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
-    <!-- End Contact -->
 
-    <!-- Start Google Maps 
-    ============================================= -->
+    <!-- Start Google Maps
+============================================= -->
+    <div class="row default-padding-top">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="site-heading text-center">
+                <h2>MAP <span>Location</span></h2>
+                <h4>Do you Have Any Query?</h4>
+            </div>
+        </div>
+    </div>
     <div class="maps-area">
         <div class="container-full">
             <div class="row">
@@ -643,8 +596,8 @@
     </div>
     <!-- End Google Maps -->
 
-    <!-- Start Footer 
-    ============================================= -->
+    <!-- Start Footer
+============================================= -->
     <footer class="default-padding-top bg-light">
         <div class="container">
             <div class="row">
@@ -718,10 +671,6 @@
                     <div class="col-md-4 col-sm-6 equal-height item">
                         <div class="f-item twitter-widget">
                             <h4>Contact Info</h4>
-                            <!-- <p>
-                                Connect with us for tailored solutions and dedicated support. Elevate your business with
-                                innovation. Your success is our priority.
-                            </p> -->
                             <div class="address">
                                 <ul>
                                     <li>
@@ -733,9 +682,9 @@
                                             <b>Kolkata</b>
                                             <span>87/3A, Raja Sc Mullick Road,
                                                 Kolkata, West Bengal, 700047</span>
-                                                <br>
-                                                <b>Bangalore</b>
-                                                <span>#43,5th A cross ITI layout jp nagar, 
+                                            <br>
+                                            <b>Bangalore</b>
+                                            <span>#43,5th A cross ITI layout jp nagar,
                                                 phase-1,PIN-560078 </span>
                                         </div>
                                     </li>
@@ -804,7 +753,7 @@
     </footer>
     <!-- End Footer -->
     <!-- jQuery Frameworks
-    ============================================= -->
+============================================= -->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/equal-height.min.js"></script>
@@ -818,43 +767,59 @@
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/click.js"></script>
-    
-    <!-- <script>-->
-    <!--    function submitForm() {-->
-    <!--        var formData = {-->
-    <!--            name: $('#name').val(),-->
-    <!--            phone_number: $('#phone_number').val(),-->
-    <!--            email: $('#email').val(),-->
-    <!--            company_name: $('#company_name').val(),-->
-    <!--            product_interested: $('#product_interested').val(),-->
-    <!--            comments: $('#comments').val(),-->
-    <!--            company_url: $('#company_url').val()-->
-    <!--        };-->
+    <script>
+        $(document).ready(function () {
+            let currentIndex = 0;
+            const slides = $('.slide');
+            const totalSlides = slides.length;
 
-    <!--        $.ajax({-->
-    <!--            type: "POST",-->
-    <!--            url: "//cbsiot.live/internal.php",-->
-    <!--            data: JSON.stringify(formData),-->
-    <!--            contentType: "application/json",-->
-    <!--            success: function (data) {-->
-    <!--                console.log('Data sent successfully:', data);-->
+            function showCurrentSlide() {
+                const newTransformValue = -currentIndex * 100 + '%';
+                $('.slider').css('transform', 'translateX(' + newTransformValue + ')');
+            }
+
+            setInterval(function () {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                showCurrentSlide();
+            }, 4000);
+        });
+    </script>
+    <script>
+        function submitForm() {
+            var formData = {
+                name: $('#name').val(),
+                phone_number: $('#phone_number').val(),
+                email: $('#email').val(),
+                company_name: $('#company_name').val(),
+                product_interested: $('#product_interested').val(),
+                comments: $('#comments').val(),
+                company_url: $('#company_url').val()
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "//cbsiot.live/internal.php",
+                data: JSON.stringify(formData),
+                contentType: "application/json",
+                success: function (data) {
+                    console.log('Data sent successfully:', data);
 
                     // Display "thank you" message in a popup div
-    <!--                $('#thankYouPopup').show();-->
+                    $('#thankYouPopup').show();
 
                     // Redirect to a new URL after a delay (e.g., 3 seconds)
-    <!--                setTimeout(function () {-->
-    <!--                    window.location.href = "//cbsiot.live/";-->
+                    setTimeout(function () {
+                        window.location.href = "//cbsiot.live/";
                     }, 3000); // 3000 milliseconds = 3 seconds
-    <!--            },-->
-    <!--            error: function (xhr, status, error) {-->
-    <!--                console.error('Error sending data:', error);-->
-    <!--                console.log('Response:', xhr.responseText);-->
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error sending data:', error);
+                    console.log('Response:', xhr.responseText);
                     // Handle the error if needed
-    <!--            }-->
-    <!--        });-->
-    <!--    }-->
-    <!--</script>    -->
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
